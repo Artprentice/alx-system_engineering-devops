@@ -9,3 +9,4 @@ Script to move file betty to new directory
 Script to delete betty
 Script to delete parent directory
 Script to go back to previous directory
+Script to list all files in current , parent ad boot directory
