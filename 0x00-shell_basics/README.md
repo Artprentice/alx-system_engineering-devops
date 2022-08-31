@@ -7,3 +7,4 @@ Script to display content digits user id numerically only
 Script to create directory in /tmp/ directory
 Script to move file betty to new directory
 Script to delete betty
+Script to delete parent directory
