@@ -3,3 +3,4 @@ Script to display the content list of current directory
 Script to take me to my home directory
 Script to display content in long format
 Script to display content including hidden items in long format
+Script to display content digits only
