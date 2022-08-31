@@ -15,3 +15,4 @@ Script to create a symbollic link
 Script to copy all html files
 Script to move all files beginning ith an upper case alphabet
 Script to delete all files ending with ~
+Script to create multiple directories in current directory
