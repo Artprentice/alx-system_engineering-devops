@@ -16,3 +16,4 @@ Script to copy all html files
 Script to move all files beginning ith an upper case alphabet
 Script to delete all files ending with ~
 Script to create multiple directories in current directory
+lists all the files and directories of the current directory, separated by ,
