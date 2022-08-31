@@ -12,3 +12,4 @@ Script to go back to previous directory
 Script to list all files in current , parent ad boot directory
 Script to print the type of file
 Script to create a symbollic link
+Script to copy all html files
