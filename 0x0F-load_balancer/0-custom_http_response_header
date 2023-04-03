@@ -80,9 +80,6 @@ server_config=\
 		}
 }"
 
-# Open the Nginx configuration file and add the custom header
-sudo sed -i '/http {/a \        add_header X-Served-By $hostname;' /etc/nginx/nginx.conf
-
 #shellcheck disable=SC2154
 echo "$server_config" | sudo dd status=none of=/etc/nginx/sites-enabled/default
 
