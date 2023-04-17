@@ -1,9 +1,4 @@
 # NAT table rules
-*nat
-:POSTROUTING ACCEPT [0:0]
-# Forward traffic from eth0 through eth1.
--A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
-COMMIT
 #
 # rules.before
 #
@@ -13,6 +8,11 @@ COMMIT
 #   ufw-before-output
 #   ufw-before-forward
 #
+*nat
+:POSTROUTING ACCEPT [0:0]
+# Forward traffic from eth0 through eth1.
+-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+COMMIT
 
 # Don't delete these required lines, otherwise there will be errors
 *filter
