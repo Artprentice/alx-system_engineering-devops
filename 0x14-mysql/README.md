@@ -1,6 +1,5 @@
-# 0x14. MySQL
-In this project, I learned about:
-- The main role of databases and db replica
-- Database replica and how to create one
+For this project i learn:
 
-
+- What a primary-replica cluster is
+- MySQL primary replica setup
+- How to build a robust database backup strategy
