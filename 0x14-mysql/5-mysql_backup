@@ -1,26 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# This generates a MySQL dump and creates a compressed archive out of it
 
-# Check for password argument
-if [ -z "$1" ]
-  then
-    echo "Please provide the MySQL root password as an argument"
-    exit 1
-fi
-
-# Set backup filename
-backup_file=backup.sql
-
-# Dump all MySQL databases
-mysqldump -u root -p"$1" --all-databases > "$backup_file"
-
-# Create archive filename with today's date
-archive_file=$(date +%d-%m-%Y).tar.gz
-
-# Compress dump into archive
-tar -czvf "$archive_file" "$backup_file"
-
-# Remove the dump file
-rm "$backup_file"
-
-echo "MySQL backup created and compressed to $archive_file"
-
+mysqldump -u root -p"$1" --all-databases > backup.sql
+tar -czvf "$(date '+%d-%m-%Y').tar.gz" backup.sql
